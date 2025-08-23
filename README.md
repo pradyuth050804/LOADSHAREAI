@@ -27,20 +27,22 @@ SETUP INSTRUCTIONS
 -------------------------------------------------
 
 1. Clone the repository
+   
    git clone <https://github.com/pradyuth050804/LOADSHAREAI>
+   
    cd loadshare-llama-assist-main
 
-2. Install frontend dependencies
+3. Install frontend dependencies
    npm install
    
 
-3. Install backend dependencies (Python)
+4. Install backend dependencies (Python)
    python -m venv .venv
    source .venv/bin/activate   # Linux/Mac
    .venv\Scripts\activate    # Windows
    pip install -r requirements.txt
 
-4. Create a .env file in the root directory and configure:
+5. Create a .env file in the root directory and configure:
    - API keys (e.g., OpenAI/LLaMA or HuggingFace)
    - Database credentials (if using Mongo/Postgres)
    - Any other environment variables
