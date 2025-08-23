@@ -1,70 +1,93 @@
-Welcome to your Project
-Project info
-How can I edit this code?
+README - Grid Buddy
 
-There are several ways of editing your application.
+=================================================
+Project: Grid Buddy
+=================================================
 
-Use your preferred IDE
+This project is a hybrid AI-powered chatbot for logistics,
+built with:
+- Frontend: React (Vite + TailwindCSS), Node.js
+- Backend: Python (FastAPI with LLaMA integration)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes.
+-------------------------------------------------
+PREREQUISITES
+-------------------------------------------------
+1. Install Node.js (>=18)
+   https://nodejs.org
 
-The only requirement is having Node.js & npm installed - install with nvm
+2. Install Python (>=3.10)
+   https://www.python.org/downloads/
 
-Follow these steps:
-
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+3. Install Git (for cloning and version control)
+   https://git-scm.com/downloads
 
 
-Edit a file directly in GitHub
+-------------------------------------------------
+SETUP INSTRUCTIONS
+-------------------------------------------------
 
-Navigate to the desired file(s).
+1. Clone the repository
+   git clone <https://github.com/pradyuth050804/LOADSHAREAI>
+   cd loadshare-llama-assist-main
 
-Click the "Edit" button (pencil icon) at the top right of the file view.
+2. Install frontend dependencies
+   npm install
+   
 
-Make your changes and commit the changes.
+3. Install backend dependencies (Python)
+   python -m venv .venv
+   source .venv/bin/activate   # Linux/Mac
+   .venv\Scripts\activate    # Windows
+   pip install -r requirements.txt
 
-Use GitHub Codespaces
+4. Create a .env file in the root directory and configure:
+   - API keys (e.g., OpenAI/LLaMA or HuggingFace)
+   - Database credentials (if using Mongo/Postgres)
+   - Any other environment variables
 
-Navigate to the main page of your repository.
+-------------------------------------------------
+RUNNING LOCALLY
+-------------------------------------------------
 
-Click on the "Code" button (green button) near the top right.
+Frontend (React + Vite):
+   npm run dev
+  
 
-Select the "Codespaces" tab.
+Backend (Python):
+   uvicorn main:app --reload
 
-Click on "New codespace" to launch a new Codespace environment.
+The frontend will typically run on:
+   http://localhost:5173
 
-Edit files directly within the Codespace and commit and push your changes once you're done.
+The backend API will typically run on:
+   http://localhost:8000
 
-What technologies are used for this project?
+-------------------------------------------------
+DEPLOYMENT
+-------------------------------------------------
 
-This project is built with:
+1. Vercel Deployment (Recommended)
+   - Install Vercel CLI: npm install -g vercel
+   - Run: vercel
+   - Follow the prompts to deploy
 
-Vite
+2. Manual Deployment (Alternative)
+   - Host frontend on Netlify/Vercel/Static server
+   - Host backend on Render, Railway, or any Python hosting
+   - Configure environment variables on the hosting platform
 
-TypeScript
+-------------------------------------------------
+TROUBLESHOOTING
+-------------------------------------------------
 
-React
+- If you get dependency errors, delete node_modules and run:
+  npm install
 
-shadcn-ui
+- If Python packages fail, upgrade pip:
+  python -m pip install --upgrade pip
 
-Tailwind CSS
+- Ensure environment variables are set correctly in .env
 
-How can I deploy this project?
-
-You can deploy this project using any modern hosting service (e.g., Vercel, Netlify, GitHub Pages, Render, etc.).
-
-Can I connect a custom domain to my project?
-
-Yes, you can!
-
-Most deployment platforms (Vercel, Netlify, etc.) allow you to connect a custom domain through their dashboard.
+=================================================
+END OF README
+=================================================
