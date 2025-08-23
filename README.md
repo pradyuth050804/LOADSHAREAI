@@ -7,7 +7,7 @@ Project: Grid Buddy
 This project is a hybrid AI-powered chatbot for logistics,
 built with:
 - Frontend: React (Vite + TailwindCSS), Node.js
-- Backend: Python (FastAPI with LLaMA integration)
+- Backend: Python (FastAPI with LLaMA integration), Type Script
 
 -------------------------------------------------
 PREREQUISITES
