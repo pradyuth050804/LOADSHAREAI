@@ -90,6 +90,12 @@ TROUBLESHOOTING
 
 - Ensure environment variables are set correctly in .env
 
+
+------------------------------------------------
+SCOPE FOR IMPROVEMENT
+------------------------------------------------
+- Multi language support
+
 =================================================
 END OF README
 =================================================
